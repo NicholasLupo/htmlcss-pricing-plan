@@ -9,3 +9,66 @@ body {
     margin: auto;
     max-width: 900px;
 }
+
+/* Header */
+
+.header-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 2px dashed black;
+
+    .up-left {
+        max-width: 70%;
+        border: 2px dashed black;
+    }
+
+    .up-right {
+        display: flex;
+        font-size: 18px;
+        border: 2px dashed black;
+        
+        p {
+            padding-left: 0.5rem;
+        }
+
+        i {
+            padding-left: 0.5rem;
+            font-size: 30px;
+        }
+    }
+}
+
+/* Main */
+
+.price-main {
+    border: 2px dashed red;
+
+    .container {
+
+
+        .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+            .col {
+                border: 2px dashed grey;
+                flex-basis: calc(100% / 3 - (15px * 2) / 3);
+                flex-grow: 1;
+                flex-shrink: 0;
+                min-width: 200px;
+                padding: 1rem;
+
+                .cent {
+                    text-align: center;
+                }
+
+                .list-service > ul {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
