@@ -16,12 +16,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
     /*border: 2px dashed black;*/
 
     .up-left {
         max-width: 70%;
-        border: 2px dashed black;
     }
 
     .up-right {
@@ -30,8 +29,6 @@ body {
         justify-content: end;
         flex-grow: 1;
         font-size: 18px;
-        
-        border: 2px dashed black;
         
         p {
             display: inline;
