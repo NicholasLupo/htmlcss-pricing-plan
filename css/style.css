@@ -46,7 +46,7 @@ body {
     border: 2px dashed red;
 
     .container {
-
+        max-height: 900px;
 
         .row {
         display: flex;
@@ -57,12 +57,42 @@ body {
                 border: 2px dashed grey;
                 flex-basis: calc(100% / 3 - (15px * 2) / 3);
                 flex-grow: 1;
-                flex-shrink: 0;
                 min-width: 200px;
+                min-height: 300px;
                 padding: 1rem;
 
                 .cent {
                     text-align: center;
+                    margin-top: 1rem;
+
+                    .price {
+
+                        .facecard {
+
+                            .big {
+                                display: inline;
+                                font-size: 40px;
+                            }
+
+                            .opacity {
+                                display: inline;
+                                font-size: 14px;
+                                opacity: 50%;
+                            }
+                        }
+                        
+
+                        .sales {
+                            padding: 1rem;
+
+                            .shadow {
+                                display: inline;
+                                padding: 5px;
+                                border-radius: 8px;
+                                background-color: #e3e3e3;
+                            }
+                        }
+                    }
                 }
 
                 .list-service > ul {
