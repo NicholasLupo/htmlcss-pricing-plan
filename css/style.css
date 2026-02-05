@@ -64,8 +64,17 @@ body {
                 flex-basis: calc(100% / 3 - (15px * 2) / 3);
                 flex-grow: 1;
                 min-width: 270px;
-                min-height: 300px;
+                min-height: 200px;
                 padding: 1rem;
+
+                .card {
+                    padding-left: 1rem;
+                    padding-top: 1rem;
+
+                    p {
+                        color: #9b9b9b;
+                    }
+                }
                 
                 .cent {
                     text-align: center;
@@ -123,8 +132,6 @@ body {
                             li {
                                 display: flex;
                                 flex-direction: row;
-                                align-content: center;
-                                justify-content: space-between;
                                 align-items: center;
                                 padding-top: 1rem;
                                 padding-bottom: 1rem;
