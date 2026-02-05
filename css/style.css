@@ -67,7 +67,6 @@ body {
                 min-height: 300px;
                 padding: 1rem;
                 
-
                 .cent {
                     text-align: center;
                     margin-top: 1rem;
@@ -88,6 +87,7 @@ body {
                     .price {
 
                         .facecard {
+                            font-weight: bold;
 
                             .big {
                                 display: inline;
