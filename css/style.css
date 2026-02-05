@@ -22,18 +22,19 @@ body {
     .up-left {
         max-width: 70%;
         border: 2px dashed black;
-
-        p{
-            color: #9b9b9b;
-        }
     }
 
     .up-right {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        flex-grow: 1;
         font-size: 18px;
+        
         border: 2px dashed black;
         
         p {
+            display: inline;
             padding-left: 0.5rem;
             color: #9b9b9b;
         }
@@ -50,134 +51,138 @@ body {
 .price-main {
     padding: 1rem;
 
-    .container {
-        max-height: 900px;
+    section {
 
-        .row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
+        .container {
+            max-height: 900px;
 
-            .col {
-                box-shadow: 0 0 8px #9b9b9b;
-                border-radius: 1rem;
-                flex-basis: calc(100% / 3 - (15px * 2) / 3);
-                flex-grow: 1;
-                min-width: 270px;
-                min-height: 200px;
-                padding: 1rem;
+            .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
 
-                .card {
-                    padding-left: 1rem;
-                    padding-top: 1rem;
+                .col {
+                    box-shadow: 0 0 8px #9b9b9b;
+                    border-radius: 1rem;
+                    flex-basis: calc(100% / 3 - (15px * 2) / 3);
+                    flex-grow: 1;
+                    min-width: 270px;
+                    min-height: 200px;
+                    padding: 1rem;
 
-                    p {
-                        color: #9b9b9b;
+                    .card {
+                        padding-left: 1rem;
+                        padding-top: 1rem;
+
+                        p {
+                            color: #9b9b9b;
+                        }
+                    }
+                    
+                    .cent {
+                        text-align: center;
+                        margin-top: 1rem;
+
+                        .choose {
+                            padding: 1rem;
+
+                            .purple {
+                                background-color: #6500ff;
+                                color: white;
+                                border-radius: 1rem;
+                                border: none;
+                                height: 50px;
+                                width: 100%;
+                            }
+                        }
+
+                        .price {
+
+                            .facecard {
+                                font-weight: bold;
+
+                                .big {
+                                    display: inline;
+                                    font-size: 40px;
+                                }
+
+                                .gray {
+                                    display: inline;
+                                    font-size: 14px;
+                                    color: #9b9b9b;
+                                }
+                            }
+                            
+
+                            .sales {
+                                padding: 1rem;
+
+                                .shadow {
+                                    display: inline;
+                                    padding: 5px;
+                                    border-radius: 8px;
+                                    background-color: #e3e3e3;
+                                    color: black;
+                                }
+                            }
+                        }
+
+                        .list-service {
+
+                            ul {
+                                list-style-type: none;
+
+                                li {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    padding-top: 1rem;
+                                    padding-bottom: 1rem;
+
+                                    .icon {
+                                        display: inline;
+                                        min-width: 30%;
+
+                                        i {
+                                            font-size: 25px;
+                                        }
+                                    }
+
+                                    .text {
+                                        display: inline;
+                                        text-align: left;
+                                        min-width: 70%;
+                                    }
+                                }
+
+                                /*  
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    align-content: center;
+                                    justify-content: space-between;
+                                    align-items: center; 
+                                */
+                            }
+                            
+                        }
                     }
                 }
-                
-                .cent {
-                    text-align: center;
-                    margin-top: 1rem;
+
+                #professional {
+                    background-color: #6500ff;
+                    color: white;
 
                     .choose {
-                        padding: 1rem;
 
                         .purple {
-                            background-color: #6500ff;
-                            color: white;
+                            background-color: white;
+                            color: #6500ff;
                             border-radius: 1rem;
                             border: none;
                             height: 50px;
                             width: 100%;
                         }
-                    }
-
-                    .price {
-
-                        .facecard {
-                            font-weight: bold;
-
-                            .big {
-                                display: inline;
-                                font-size: 40px;
-                            }
-
-                            .gray {
-                                display: inline;
-                                font-size: 14px;
-                                color: #9b9b9b;
-                            }
-                        }
-                        
-
-                        .sales {
-                            padding: 1rem;
-
-                            .shadow {
-                                display: inline;
-                                padding: 5px;
-                                border-radius: 8px;
-                                background-color: #e3e3e3;
-                                color: black;
-                            }
-                        }
-                    }
-
-                    .list-service {
-
-                        ul {
-                            list-style-type: none;
-
-                            li {
-                                display: flex;
-                                flex-direction: row;
-                                align-items: center;
-                                padding-top: 1rem;
-                                padding-bottom: 1rem;
-
-                                .icon {
-                                    display: inline;
-                                    min-width: 30%;
-
-                                    i {
-                                        font-size: 25px;
-                                    }
-                                }
-
-                                .text {
-                                    display: inline;
-                                    min-width: 70%;
-                                }
-                            }
-
-                            /*  
-                                display: flex;
-                                flex-direction: row;
-                                flex-wrap: wrap;
-                                align-content: center;
-                                justify-content: space-between;
-                                align-items: center; 
-                            */
-                        }
-                        
-                    }
-                }
-            }
-
-            #professional {
-                background-color: #6500ff;
-                color: white;
-
-                .choose {
-
-                    .purple {
-                        background-color: white;
-                        color: #6500ff;
-                        border-radius: 1rem;
-                        border: none;
-                        height: 50px;
-                        width: 100%;
                     }
                 }
             }
