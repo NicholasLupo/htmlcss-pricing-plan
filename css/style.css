@@ -17,7 +17,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
-    border: 2px dashed black;
+    /*border: 2px dashed black;*/
 
     .up-left {
         max-width: 70%;
@@ -43,7 +43,7 @@ body {
 /* Main */
 
 .price-main {
-    border: 2px dashed red;
+    padding: 1rem;
 
     .container {
         max-height: 900px;
@@ -54,12 +54,14 @@ body {
         gap: 15px;
 
             .col {
-                border: 2px dashed grey;
+                box-shadow: 0 0 8px #9b9b9b;
+                border-radius: 1rem;
                 flex-basis: calc(100% / 3 - (15px * 2) / 3);
                 flex-grow: 1;
                 min-width: 200px;
                 min-height: 300px;
                 padding: 1rem;
+                
 
                 .cent {
                     text-align: center;
@@ -74,10 +76,10 @@ body {
                                 font-size: 40px;
                             }
 
-                            .opacity {
+                            .gray {
                                 display: inline;
                                 font-size: 14px;
-                                opacity: 50%;
+                                color: #9b9b9b;
                             }
                         }
                         
@@ -90,6 +92,7 @@ body {
                                 padding: 5px;
                                 border-radius: 8px;
                                 background-color: #e3e3e3;
+                                color: black;
                             }
                         }
                     }
@@ -98,6 +101,11 @@ body {
                 .list-service > ul {
                     list-style-type: none;
                 }
+            }
+
+            #professional {
+                background-color: #6500ff;
+                color: white;
             }
         }
     }
