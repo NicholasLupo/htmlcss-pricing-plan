@@ -22,6 +22,10 @@ body {
     .up-left {
         max-width: 70%;
         border: 2px dashed black;
+
+        p{
+            color: #9b9b9b;
+        }
     }
 
     .up-right {
@@ -31,6 +35,7 @@ body {
         
         p {
             padding-left: 0.5rem;
+            color: #9b9b9b;
         }
 
         i {
@@ -58,7 +63,7 @@ body {
                 border-radius: 1rem;
                 flex-basis: calc(100% / 3 - (15px * 2) / 3);
                 flex-grow: 1;
-                min-width: 200px;
+                min-width: 270px;
                 min-height: 300px;
                 padding: 1rem;
                 
@@ -66,6 +71,19 @@ body {
                 .cent {
                     text-align: center;
                     margin-top: 1rem;
+
+                    .choose {
+                        padding: 1rem;
+
+                        .purple {
+                            background-color: #6500ff;
+                            color: white;
+                            border-radius: 1rem;
+                            border: none;
+                            height: 50px;
+                            width: 100%;
+                        }
+                    }
 
                     .price {
 
@@ -96,16 +114,65 @@ body {
                             }
                         }
                     }
-                }
 
-                .list-service > ul {
-                    list-style-type: none;
+                    .list-service {
+
+                        ul {
+                            list-style-type: none;
+
+                            li {
+                                display: flex;
+                                flex-direction: row;
+                                align-content: center;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding-top: 1rem;
+                                padding-bottom: 1rem;
+
+                                .icon {
+                                    display: inline;
+                                    min-width: 30%;
+
+                                    i {
+                                        font-size: 25px;
+                                    }
+                                }
+
+                                .text {
+                                    display: inline;
+                                    min-width: 70%;
+                                }
+                            }
+
+                            /*  
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                align-content: center;
+                                justify-content: space-between;
+                                align-items: center; 
+                            */
+                        }
+                        
+                    }
                 }
             }
 
             #professional {
                 background-color: #6500ff;
                 color: white;
+
+                .choose {
+
+                    .purple {
+                        background-color: white;
+                        color: #6500ff;
+                        border-radius: 1rem;
+                        border: none;
+                        height: 50px;
+                        width: 100%;
+                    }
+                }
             }
         }
     }
